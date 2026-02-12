@@ -6,7 +6,9 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "npx tsx src/index.ts",
-    "client": "npx tsx src/client.ts"
+    "start:client": "npx tsx src/client.ts",
+    "start:worker": "npx tsx watch src/worker.ts",
+    "start:chat": "npx tsx src/chat.ts"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +20,7 @@
   },
   "dependencies": {
     "@ai-sdk/google": "^3.0.10",
+    "@temporalio/ai-sdk": "^1.14.1",
     "@temporalio/client": "^1.14.1",
     "@temporalio/worker": "^1.14.1",
     "@temporalio/workflow": "^1.14.1",
